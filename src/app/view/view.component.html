@@ -1,0 +1,17 @@
+<div class="d-flex justify-content-center row mt-5">
+    <div class="card shadow col-lg-6 p-4">
+        <h3>User Info</h3>
+        <hr>
+        <div class="form-group">
+            <img [src]="user.image" alt="{{user.firstName}} {{user.lastName}}" style="width: 100px;height: 100px;" />
+        </div>
+        <h4 class="card-title">
+            {{user.firstName}} {{user.lastName}}
+        </h4>
+        <div>
+            Email: <a href="mailTo:{{user.email}}">{{user.email}}</a>
+            <p>Phone number: +91 {{user.phoneNumber}}</p>
+        </div>
+        <button class="btn btn-secondary btn-sm" (click)="back()">Back</button>
+    </div>
+</div>
